@@ -1,2 +1,1 @@
-# encode-ptr
-A simple wrapper for EncodePointer / DecodePointer windows apis
+This was made for educational purposes and shouldn't be used in production as each call to EncodePointer / DecodePointer queries the kernel and introduces a significant run time overhead.
