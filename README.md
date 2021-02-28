@@ -7,6 +7,13 @@
 
 int main()
 {
-    auto object = encoded_ptr<Object>::create(args);
+    //A pointer to an Object is created and encoded
+    auto pObject = encoded_ptr<Object>::create(args);
+    
+    //operator->() is invoked and the pointer is decoded
+    pObject->field = 3;
+    
+    //operator*() is invoked and the pointer is decoded
+    decltype(auto) object = *pObject;
 }
 ```
